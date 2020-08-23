@@ -1,0 +1,71 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>未知 </title></head><body>
+<p>Docker deploying Nginx MySQL PHP7/PHP5.6/PHP5.4 in one key, support full feature functions.</p>
+<p><strong><a href="README.md">[中文说明]</a></strong></p>
+<h2 id="1-feature">1. Feature</h2>
+<ol>
+<li>Completely open source.</li>
+<li>Support Multiple PHP version(PHP5.4, PHP5.6, PHP7.0, PHP7.1, PHP7.2, PHP7.3) switch.</li>
+<li>Support Multiple domains.</li>
+<li>Support HTTPS and HTTP/2.</li>
+<li>PHP source located in host.</li>
+<li>MySQL data directory in host.</li>
+<li>All conf files located in host.</li>
+<li>All log files located in host.</li>
+<li>Built-in PHP extensions install commands.</li>
+<li>Promise 100% available.</li>
+<li>Supported any OS with docker.</li>
+</ol>
+<h2 id="2-usage">2. Usage</h2>
+<ol>
+<li>Install <code>git</code>, <code>docker</code> and <code>docker-compose</code>;</li>
+<li>Clone project:
+    <code>$ git clone https://github.com/yeszao/dnmp.git</code></li>
+<li>Add current user to group <code>docker</code>：
+    <code>$ sudo gpasswd -a ${USER} docker</code></li>
+<li>Start docker containers:
+    <code>$ cd dnmp
+    $ cp env.sample .env
+    $ cp docker-compose.sample.yml docker-compose.yml
+    $ docker-compose up</code></li>
+<li>Go to your browser and type <code>http://localhost</code>, you will see:</li>
+</ol>
+<p><img alt="Demo Image" src="snapshot-1.png"/></p>
+<p>The index file is located at <code>./www/localhost/index.php</code>.</p>
+<h2 id="3multiple-php-version">3.Multiple php version</h2>
+<p>Default, we create 3 php container, they are PHP7, PHP5.6 and PHP5.4,</p>
+<p>We can change easy by modify Nginx configuration <code>fastcgi_pass</code>.</p>
+<p>For example, <a href="http://localhost">http://localhost</a> use PHP7, Nginx <code>fastcgi_pass</code> is:
+<code>fastcgi_pass   php:9000;</code>
+To use PHP7, change it:
+<code>fastcgi_pass   php54:9000;</code>
+Then reload nginx:
+<code>bash
+$ docker exec -it nginx nginx -s reload</code>
+Done.</p>
+<h2 id="4use-composer">4.Use composer</h2>
+<p>We will always use composer in host.</p>
+<p>On host, Create a folder for saving composer config file and cache:
+<code>mkdir ~/dnmp/composer</code>
+Open ~/.bashrc, add:
+<code>composer () {
+    tty=
+    tty -s &amp;&amp; tty=--tty
+    docker run \
+        $tty \
+        --interactive \
+        --rm \
+        --user $(id -u):$(id -g) \
+        --volume ~/dnmp/composer:/tmp \
+        --volume /etc/passwd:/etc/passwd:ro \
+        --volume /etc/group:/etc/group:ro \
+        --volume $(pwd):/app \
+        composer "$@"
+}</code>
+Make this script affect:
+<code>source ~/.bashrc</code>
+Thats all, use composer:
+<code>cd ~/dnmp/www/
+composer create-project yeszao/fastphp project --no-dev</code></p>
+<h2 id="license">License</h2>
+<p>MIT</p>
+</body></html>
