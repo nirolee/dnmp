@@ -34,10 +34,12 @@ services:
         PHP_EXTENSIONS: ${PHP_EXTENSIONS}
         TZ: "$TZ"
     container_name: php
-    expose:
-      - 9501
-    extra_hosts:
-      - "www.site1.com:172.17.0.1"
+    ports:
+      - "9501:9501"
+    # expose:
+    #   - 9501
+    # extra_hosts:
+    #   - "www.site1.com:172.17.0.1"
     volumes:
       - ${SOURCE_DIR}:/www/:rw
       - ${PHP_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
@@ -143,20 +145,20 @@ services:
 #    networks:
 #      - default
 
-#  redis:
-#    image: redis:${REDIS_VERSION}
-#    container_name: redis
-#    ports:
-#      - "${REDIS_HOST_PORT}:6379"
-#    volumes:
-#      - ${REDIS_CONF_FILE}:/etc/redis.conf:ro
-#      - ${DATA_DIR}/redis:/data/:rw
-#    restart: always
-#    entrypoint: ["redis-server", "/etc/redis.conf"]
-#    environment:
-#      TZ: "$TZ"
-#    networks:
-#      - default
+  redis:
+    image: redis:${REDIS_VERSION}
+    container_name: redis
+    ports:
+      - "${REDIS_HOST_PORT}:6379"
+    volumes:
+      - ${REDIS_CONF_FILE}:/etc/redis.conf:ro
+      - ${DATA_DIR}/redis:/data/:rw
+    restart: always
+    entrypoint: ["redis-server", "/etc/redis.conf"]
+    environment:
+      TZ: "$TZ"
+    networks:
+      - default
 
 #  memcached:
 #    image: memcached:${MEMCACHED_VERSION}
