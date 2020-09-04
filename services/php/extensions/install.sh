@@ -570,7 +570,15 @@ if [[ -z "${EXTENSIONS##*,swoole,*}" ]]; then
     isPhpVersionGreaterOrEqual 7 0
 
     if [[ "$?" = "1" ]]; then
-        installExtensionFromTgz swoole-4.5.2 --enable-openssl
+        tgzName=swoole-4.5.2
+        extensionName="${tgzName%%-*}"
+
+        mkdir ${extensionName}
+        tar -xf ${tgzName}.tgz -C ${extensionName} --strip-components=1
+        ( cd ${extensionName} && phpize && ./configure --enable-openssl && make ${MC} && make install )
+
+        docker-php-ext-enable ${extensionName} $2
+        # installExtensionFromTgz swoole-4.5.2
     else
         installExtensionFromTgz swoole-2.0.11
     fi
