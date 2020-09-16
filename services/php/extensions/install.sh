@@ -70,6 +70,7 @@ installExtensionFromTgz()
 }
 
 
+
 if [[ -z "${EXTENSIONS##*,pdo_mysql,*}" ]]; then
     echo "---------- Install pdo_mysql ----------"
     docker-php-ext-install ${MC} pdo_mysql
@@ -578,6 +579,7 @@ if [[ -z "${EXTENSIONS##*,swoole,*}" ]]; then
         ( cd ${extensionName} && phpize && ./configure --enable-openssl && make ${MC} && make install )
 
         docker-php-ext-enable ${extensionName} $2
+
         # installExtensionFromTgz swoole-4.5.2
     else
         installExtensionFromTgz swoole-2.0.11
