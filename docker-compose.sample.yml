@@ -52,6 +52,12 @@ services:
       - SYS_PTRACE
     networks:
       - default
+    environment:
+      - PHP_IDE_CONFIG=serverName=sdebug
+      # - ALL_PROXY=socks5://v2ray:10808
+      # - HTTP_PROXY=socks5://v2ray:10808
+      # - HTTPS_PROXY=socks5://v2ray:10808
+      # - NO_PROXY=dev-internal.apollo-config-center.xshoppy.top:8080
 
 #  php56:
 #    build:
