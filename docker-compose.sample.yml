@@ -36,13 +36,14 @@ services:
     container_name: php
     ports:
       - "9501:9501"
+      - "9502:9502"
     # expose:
     #   - 9501
     # extra_hosts:
     #   - "www.site1.com:172.17.0.1"
     volumes:
       - ${SOURCE_DIR}:/www/:rw
-      - ${COMPANY_DIR}:/www/:rw
+      - ${COMPANY_P1}:/www/yunz_ads_backend/:rw
       - ${PHP_PHP_CONF_FILE}:/usr/local/etc/php/php.ini:ro
       - ${PHP_FPM_CONF_FILE}:/usr/local/etc/php-fpm.d/www.conf:rw
       - ${PHP_LOG_DIR}:/var/log/php
@@ -167,6 +168,19 @@ services:
     networks:
       - default
 
+  v2ray:
+    # build:
+    #   context: ./services/v2ray
+    image: v2fly/v2fly-core:latest
+    container_name: v2ray
+    restart: always
+    expose: 
+      - "10808"
+    networks:
+      - default
+    volumes:
+      - ${V2RAY_CONF_FILE}:/etc/v2ray/config.json:ro
+      - ./services/v2ray/log:/var/log/v2ray
 #  memcached:
 #    image: memcached:${MEMCACHED_VERSION}
 #    container_name: memcached
@@ -218,35 +232,35 @@ services:
 #      - REDIS_1_PORT=6379
 #      - TZ=$TZ
 
-    mongodb:
-      image: mongo:${MONGODB_VERSION}
-      container_name: mongodb
-      environment:
-          MONGO_INITDB_ROOT_USERNAME: "${MONGODB_INITDB_ROOT_USERNAME}"
-          MONGO_INITDB_ROOT_PASSWORD: "${MONGODB_INITDB_ROOT_PASSWORD}"
-          TZ: "$TZ"
-      volumes:
-        # - ${DATA_DIR}/mongo:/data/db:rw
-        - /var/lib/docker/volumes/mongodata/_data:/data/db:rw
-        - ${DATA_DIR}/mongo_key:/mongo:rw
-      ports:
-         - "${MONGODB_HOST_PORT}:27017"
-      networks:
-         - default
-      command:
-         --auth
+  mongodb:
+    image: mongo:${MONGODB_VERSION}
+    container_name: mongodb
+    environment:
+        MONGO_INITDB_ROOT_USERNAME: "${MONGODB_INITDB_ROOT_USERNAME}"
+        MONGO_INITDB_ROOT_PASSWORD: "${MONGODB_INITDB_ROOT_PASSWORD}"
+        TZ: "$TZ"
+    volumes:
+      - /var/lib/docker/volumes/mongodata/_data:/data/db
+      # - ${DATA_DIR}/mongo:/data/db:rw
+      - ${DATA_DIR}/mongo_key:/mongo:rw
+    ports:
+        - "${MONGODB_HOST_PORT}:27017"
+    networks:
+        - default
+    command:
+        --auth
 
-#  adminmongo:
-#    image: mrvautin/adminmongo
-#    container_name: adminmongo
-#    ports:
-#      - "${ADMINMONGO_HOST_PORT}:1234"
-#    environment:
-#      - HOST=0.0.0.0
-#      - DB_HOST=mongodb
-#      - DB_PORT=27017
-#    networks:
-#      - default
+  adminmongo:
+    image: mrvautin/adminmongo
+    container_name: adminmongo
+    ports:
+      - "${ADMINMONGO_HOST_PORT}:1234"
+    environment:
+      - HOST=0.0.0.0
+      - DB_HOST=mongodb
+      - DB_PORT=27017
+    networks:
+      - default
 
 #  elasticsearch:
 #    build:
@@ -309,6 +323,7 @@ services:
 #    tty: true
 
 
+
 #  supervisor:
 #    build:
 #      context: ./services/supervisor
@@ -328,7 +343,7 @@ services:
 #      - |
 #        supervisord -n -c /etc/supervisor/supervisord.conf
 #    restart: always
-#    cap_add:
+#    cap_add: 
 #      - SYS_PTRACE
 #    networks:
 #      - default
