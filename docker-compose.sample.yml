@@ -25,6 +25,22 @@ services:
     networks:
       - default
 
+  golang:
+    image: golang:latest
+    ports: 
+      - "6001:6001"
+      - "6002:6002"
+    container_name: golang
+    volumes:
+      - ${DATA_DIR}/golang:/golang
+      - ./../www/go:/www/go:rw
+      - ${COMPANY_P1}:/www/yunz_ads_backend/:rw
+    networks:
+      - default
+    restart: always
+    tty: true
+    cap_add:
+      - SYS_PTRACE
   php:
     build:
       context: ./services/php
@@ -250,17 +266,17 @@ services:
     command:
         --auth
 
-  adminmongo:
-    image: mrvautin/adminmongo
-    container_name: adminmongo
-    ports:
-      - "${ADMINMONGO_HOST_PORT}:1234"
-    environment:
-      - HOST=0.0.0.0
-      - DB_HOST=mongodb
-      - DB_PORT=27017
-    networks:
-      - default
+  # adminmongo:
+  #   image: mrvautin/adminmongo
+  #   container_name: adminmongo
+  #   ports:
+  #     - "${ADMINMONGO_HOST_PORT}:1234"
+  #   environment:
+  #     - HOST=0.0.0.0
+  #     - DB_HOST=mongodb
+  #     - DB_PORT=27017
+  #   networks:
+  #     - default
 
 #  elasticsearch:
 #    build:
