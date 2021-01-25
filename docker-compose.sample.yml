@@ -210,7 +210,7 @@ services:
 #  rabbitmq:
 #    image: rabbitmq:${RABBITMQ_VERSION}
 #    container_name: rabbitmq
-#    restart: always
+#    restart: always  
 #    ports:
 #      - "${RABBITMQ_HOST_PORT_C}:5672"
 #      - "${RABBITMQ_HOST_PORT_S}:15672"
@@ -278,39 +278,41 @@ services:
   #   networks:
   #     - default
 
-#  elasticsearch:
-#    build:
-#      context: ./services/elasticsearch
-#      args:
-#        ELASTICSEARCH_VERSION: ${ELASTICSEARCH_VERSION}
-#        ELASTICSEARCH_PLUGINS: ${ELASTICSEARCH_PLUGINS}
-#    container_name: elasticsearch
-#    environment:
-#      - TZ=$TZ
-#      - discovery.type=single-node
-#      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-#    volumes:
-#      - ${DATA_DIR}/esdata:/usr/share/elasticsearch/data
-#      - ${ELASTICSEARCH_CONF_FILE}:/usr/share/elasticsearch/config/elasticsearch.yml
-#    hostname: elasticsearch
-#    restart: always
-#    ports:
-#      - "${ELASTICSEARCH_HOST_PORT_C}:9200"
-#      - "${ELASTICSEARCH_HOST_PORT_S}:9300"
-
-#  kibana:
-#    image: kibana:${KIBANA_VERSION}
-#    container_name: kibana
-#    environment:
-#      TZ: "$TZ"
-#      elasticsearch.hosts: http://elasticsearch:9200
-#      I18N_LOCALE: "${KIBANA_I18N_LOCALE}"
-#    hostname: kibana
-#    depends_on:
-#      - elasticsearch
-#    restart: always
-#    ports:
-#      - "${KIBANA_HOST}:5601"
+  elasticsearch:
+    build:
+      context: ./services/elasticsearch
+      args:
+        ELASTICSEARCH_VERSION: ${ELASTICSEARCH_VERSION}
+        ELASTICSEARCH_PLUGINS: ${ELASTICSEARCH_PLUGINS}
+    container_name: elasticsearch
+    environment:
+      - TZ=$TZ
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    volumes:
+      - ${DATA_DIR}/esdata:/usr/share/elasticsearch/data
+      - ${ELASTICSEARCH_CONF_FILE}:/usr/share/elasticsearch/config/elasticsearch.yml
+    hostname: elasticsearch
+    restart: always
+    tty: true
+    ports:
+      - "${ELASTICSEARCH_HOST_PORT_C}:9200"
+      - "${ELASTICSEARCH_HOST_PORT_S}:9300"
+    networks:
+        - default
+  kibana:
+    image: kibana:${KIBANA_VERSION}
+    container_name: kibana
+    environment:
+      TZ: "$TZ"
+      elasticsearch.hosts: http://elasticsearch:9200
+      I18N_LOCALE: "${KIBANA_I18N_LOCALE}"
+    hostname: kibana
+    depends_on:
+      - elasticsearch
+    restart: always
+    ports:
+      - "${KIBANA_HOST}:5601"
 
 #  logstash:
 #    image: logstash:${LOGSTASH_VERSION}
