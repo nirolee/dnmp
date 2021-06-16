@@ -1,0 +1,210 @@
+2021-05-06T07:01:40.515144Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-05-06T07:01:40.515237Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-05-06T07:01:40.516958Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.13) initializing of server in progress as process 30
+2021-05-06T07:01:43.483025Z 5 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2021-05-06T07:01:45.252613Z 5 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:45.252855Z 5 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:45.253020Z 5 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:45.253183Z 5 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:45.253364Z 5 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:45.253512Z 5 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:45.253713Z 5 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:45.254027Z 5 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:45.254203Z 5 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:45.702633Z 0 [System] [MY-013170] [Server] /usr/sbin/mysqld (mysqld 8.0.13) initializing of server has completed
+2021-05-06T07:01:48.522093Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-05-06T07:01:48.522175Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-05-06T07:01:48.522230Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 81
+mbind: Operation not permitted
+2021-05-06T07:01:49.552092Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-05-06T07:01:49.558952Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-05-06T07:01:49.571518Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:49.571905Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:49.572221Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:49.572521Z 0 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:49.572763Z 0 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:49.572990Z 0 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:49.573198Z 0 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:49.579950Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:49.580311Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:49.594529Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+2021-05-06T07:01:49.631205Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock'
+2021-05-06T07:01:53.306940Z 10 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:53.307137Z 10 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:53.307342Z 10 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:53.307558Z 10 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:53.307716Z 10 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:53.308151Z 10 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:53.308318Z 10 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:53.308618Z 10 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:53.308937Z 10 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:55.191621Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2021-05-06T07:01:55.514663Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-05-06T07:01:55.515245Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-05-06T07:01:55.515301Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+2021-05-06T07:01:56.350681Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-05-06T07:01:56.356436Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-05-06T07:01:56.370886Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:56.371121Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:56.371296Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:56.371489Z 0 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:56.371685Z 0 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:56.371860Z 0 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:56.372032Z 0 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:56.377283Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:56.377459Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T07:01:56.391564Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2021-05-06T07:01:56.497339Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2021-05-06T07:09:41.514297Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2021-05-06T08:41:03.038126Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-05-06T08:41:03.038219Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-05-06T08:41:03.038271Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+2021-05-06T08:41:03.927589Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-05-06T08:41:03.937709Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-05-06T08:41:03.951420Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:41:03.951963Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:41:03.952551Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:41:03.953036Z 0 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:41:03.953536Z 0 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:41:03.953866Z 0 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:41:03.954200Z 0 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:41:03.968666Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:41:03.968985Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:41:03.981788Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2021-05-06T08:41:04.060697Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2021-05-06T08:42:53.825297Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2021-05-06T08:43:12.412495Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-05-06T08:43:12.412559Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-05-06T08:43:12.412598Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+2021-05-06T08:43:13.218433Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-05-06T08:43:13.225620Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-05-06T08:43:13.234822Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:43:13.235143Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:43:13.235353Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:43:13.235510Z 0 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:43:13.235670Z 0 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:43:13.235873Z 0 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:43:13.236056Z 0 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:43:13.254039Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:43:13.255902Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:43:13.299400Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2021-05-06T08:43:13.408640Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2021-05-06T08:44:08.673029Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2021-05-06T08:44:22.052474Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-05-06T08:44:22.052543Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-05-06T08:44:22.052620Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+2021-05-06T08:44:22.789795Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-05-06T08:44:22.794990Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-05-06T08:44:22.806575Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:44:22.807105Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:44:22.807373Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:44:22.807590Z 0 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:44:22.808074Z 0 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:44:22.808377Z 0 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:44:22.808626Z 0 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:44:22.822456Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:44:22.822665Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T08:44:22.833800Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2021-05-06T08:44:22.947094Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2021-05-06T08:48:34.901212Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2021-05-06T09:00:16.031864Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-05-06T09:00:16.031941Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-05-06T09:00:16.031984Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+2021-05-06T09:00:16.850008Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-05-06T09:00:16.856144Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-05-06T09:00:16.870940Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T09:00:16.871221Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T09:00:16.871497Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T09:00:16.871807Z 0 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T09:00:16.873728Z 0 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T09:00:16.874184Z 0 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T09:00:16.874420Z 0 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T09:00:16.892626Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T09:00:16.892902Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-06T09:00:16.911076Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2021-05-06T09:00:16.992035Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2021-05-07T09:05:23.207874Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-05-07T09:05:23.207934Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-05-07T09:05:23.207979Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+2021-05-07T09:05:24.128842Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-05-07T09:05:24.136166Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-05-07T09:05:24.154258Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-05-07T09:05:24.154968Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-07T09:05:24.155967Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-07T09:05:24.156276Z 0 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-05-07T09:05:24.156546Z 0 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-07T09:05:24.156800Z 0 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-07T09:05:24.157066Z 0 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-05-07T09:05:24.174935Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-07T09:05:24.175167Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-07T09:05:24.187502Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2021-05-07T09:05:24.290890Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2021-05-07T10:08:47.645101Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2021-05-10T00:51:24.382660Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-05-10T00:51:24.382726Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-05-10T00:51:24.382771Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+2021-05-10T00:51:25.375401Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-05-10T00:51:25.380908Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-05-10T00:51:25.395576Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-05-10T00:51:25.395894Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-10T00:51:25.396132Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-10T00:51:25.396388Z 0 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-05-10T00:51:25.396608Z 0 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-10T00:51:25.396779Z 0 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-10T00:51:25.396992Z 0 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-05-10T00:51:25.412353Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-10T00:51:25.412536Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-10T00:51:25.424357Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2021-05-10T00:51:25.489685Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2021-05-24T00:57:43.580373Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-05-24T00:57:43.580462Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-05-24T00:57:43.580500Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+2021-05-24T00:57:44.617027Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-05-24T00:57:44.623774Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-05-24T00:57:44.641721Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-05-24T00:57:44.641915Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-24T00:57:44.642134Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-24T00:57:44.642287Z 0 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-05-24T00:57:44.642445Z 0 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-24T00:57:44.642576Z 0 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-24T00:57:44.642741Z 0 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-05-24T00:57:44.659573Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-05-24T00:57:44.659913Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-05-24T00:57:44.677836Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2021-05-24T00:57:44.773458Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2021-06-16T03:57:10.024895Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-06-16T03:57:10.024982Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-06-16T03:57:10.025024Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+2021-06-16T03:57:11.071522Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-06-16T03:57:11.081381Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-06-16T03:57:11.100264Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T03:57:11.100608Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T03:57:11.100887Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T03:57:11.101106Z 0 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T03:57:11.101296Z 0 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T03:57:11.102172Z 0 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T03:57:11.103723Z 0 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T03:57:11.128229Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T03:57:11.128913Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T03:57:11.141868Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2021-06-16T03:57:11.201497Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2021-06-16T07:18:12.336910Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.13)  MySQL Community Server - GPL.
+2021-06-16T07:19:24.539394Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-06-16T07:19:24.539460Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-06-16T07:19:24.539499Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
+2021-06-16T07:19:25.388590Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+2021-06-16T07:19:25.397746Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+2021-06-16T07:19:25.413029Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.infoschema@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T07:19:25.413333Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T07:19:25.413631Z 0 [Warning] [MY-010315] [Server] 'user' entry 'mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T07:19:25.413818Z 0 [Warning] [MY-010315] [Server] 'user' entry 'root@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T07:19:25.414089Z 0 [Warning] [MY-010323] [Server] 'db' entry 'performance_schema mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T07:19:25.414356Z 0 [Warning] [MY-010323] [Server] 'db' entry 'sys mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T07:19:25.414663Z 0 [Warning] [MY-010311] [Server] 'proxies_priv' entry '@ root@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T07:19:25.431698Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'user mysql.session@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T07:19:25.431942Z 0 [Warning] [MY-010330] [Server] 'tables_priv' entry 'sys_config mysql.sys@localhost' ignored in --skip-name-resolve mode.
+2021-06-16T07:19:25.443322Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.13'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+2021-06-16T07:19:25.547806Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: '/var/run/mysqld/mysqlx.sock' bind-address: '::' port: 33060
+2021-06-16T07:43:29.213428Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2021-06-16T07:43:29.213590Z 0 [Warning] [MY-010915] [Server] 'NO_ZERO_DATE', 'NO_ZERO_IN_DATE' and 'ERROR_FOR_DIVISION_BY_ZERO' sql modes should be used with strict mode. They will be merged with strict mode in a future release.
+2021-06-16T07:43:29.213655Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.13) starting as process 1
